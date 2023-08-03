@@ -12,10 +12,23 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
-                    <div><input type="email" name="email" id="email">seu e-mail</div>
-                    <div><input type="password" name="password" id="password">sua senha</div>
-                    <div><input type="submit" value="Entrar"></div>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div>
+                        <label for="email">
+                            <input type="email" name="email" id="email" autocomplete="email" placeholder="seu e-mail" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="password">
+                            <input type="password" name="password" id="password" autocomplete="current-password" placeholder="sua senha" minlength="8" maxlength="20" required>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar">
+                    </div>
+                    <div>
+                        <input type="button" value="Esqueci a senha">
+                    </div>
                 </form>
             </div>
             <div id="imagem">
