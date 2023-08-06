@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+/*Mobile First*/
+
 :root {
-    --verde: #49a09d;
+    --verde: #73b8b5;
     --lilas: #5f2c82;
 }
 
@@ -9,5 +11,93 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--lilas);
+    width: 100vw; 
+}
+
+section#login {
+    background-color: white;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section h1 {
+    font-size: 2em;
+    font-weight: 780;
+    text-align: center;
+    padding: 15px;
+}
+
+section p {
+    padding: 10px;
+}
+
+form {
+    padding: 10px;
+}
+
+form div.inputs {
+    background-color: var(--lilas);
+    padding: 3px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+form input.campo {
+    background-color: var(--verde);
+    font-weight: bold;
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+    border: 0px solid transparent;
+    border-radius: 10px;
+}
+
+form div#entrar-caixa {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4px;
+}
+
+form input#entrar-botao  {
+    background-color: var(--verde);
+    color: white;
+    font-size: 1.1em;
+    width: 300px;
+    height: 40px;
+    border: 0px solid transparent;
+    border-radius: 10px;
+}
+
+form input#entrar-botao:hover {
+    background-color: #477270;
+    
+}
+
+form div#esqueci-caixa {
+    display: flex;
+    justify-content: center;
+}
+
+form input#esqueci-botao {
+    background-color: white;
+    font-size: 1em;
+    width: 300px;
+    height: 40px;
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+}
+
+form input#esqueci-botao:hover {
+    background-color: var(--verde);
+    border: 1px solid black;
 }
 

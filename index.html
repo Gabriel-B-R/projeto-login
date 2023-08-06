@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
@@ -13,26 +14,26 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <div>
+                    <div class="inputs">
                         <label for="email">
-                            <input type="email" name="email" id="email" autocomplete="email" placeholder="seu e-mail" required>
+                            <input class="campo" type="email" name="email" id="email" autocomplete="email" placeholder="seu e-mail" required>
                         </label>
                     </div>
-                    <div>
+                    <div class="inputs">
                         <label for="password">
-                            <input type="password" name="password" id="password" autocomplete="current-password" placeholder="sua senha" minlength="8" maxlength="20" required>
+                            <input class="campo" type="password" name="password" id="password" autocomplete="current-password" placeholder="sua senha" minlength="8" maxlength="20" required>
                         </label>
                     </div>
-                    <div>
-                        <input type="submit" value="Entrar">
+                    <div id="entrar-caixa">
+                        <input id="entrar-botao" type="submit" value="Entrar">
                     </div>
-                    <div>
-                        <input type="button" value="Esqueci a senha">
+                    <div id="esqueci-caixa">
+                        <input id="esqueci-botao" type="button" value="Esqueci a senha">
                     </div>
                 </form>
             </div>
             <div id="imagem">
-                <img src="imagens/pattern.jpg" alt="pattern">
+                <!--<img src="imagens/pattern.jpg" alt="pattern"> -->
             </div>
         </section>
     </main>
