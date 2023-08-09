@@ -98,6 +98,7 @@ form input#esqueci-botao {
 
 form input#esqueci-botao:hover {
     background-color: var(--verde);
+    color: white;
     border: 1px solid black;
 }
 
