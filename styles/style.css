@@ -19,5 +19,7 @@ body {
 /*Caixa central*/
 div {
     background-color: white;
+    width: 700px;
+    height: 300px;
     
 }
